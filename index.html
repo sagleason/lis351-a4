@@ -1,0 +1,147 @@
+<!-- =========================================================
+STEP 1: Add the required HTML5 skeleton
+========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UW-Madison Campus & Student Life Guide</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <!-- =========================================================
+    STEP 2: Build the “top area” (site name + navigation) using simple HTML
+    ========================================================= -->
+    <header class="site-header">
+      <div class="header-inner container">
+        <div class="brand">UW-Madison Explorer<span class="dot">.</span></div>
+        <nav class="site-nav">
+          <a href="#hero">Home</a>
+          <a href="#features">Highlights</a>
+          <a href="#featured">About Campus</a>
+          <a href="#secondary-content">Explore</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+      <!-- =========================================================
+      STEP 3: Hero section + “Get Started button” as a link
+      ========================================================= -->
+      <section id="hero" class="hero">
+        <div class="hero-content container">
+          <h1>Experience UW–Madison</h1>
+          <p class="hero-subhead">Discover iconic campus views, deep-rooted traditions, and life on Lake Mendota.</p>
+          <a href="#features" class="btn btn-dark">Get Started</a>
+        </div>
+      </section>
+
+      <!-- =========================================================
+      STEP 4: Features section (3 blocks) + featured content section
+      ========================================================= -->
+      <section id="features" class="features container">
+        <h2>Campus Highlights</h2>
+
+        <div class="features-grid">
+          <article class="feature">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+              </svg>
+            </div>
+            <h3>Lakefront Living</h3>
+            <p>Enjoy scenic sunsets, sailing, and gathering with friends at the famous Memorial Union Terrace.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />
+              </svg>
+            </div>
+            <h3>Historic Campus</h3>
+            <p>Explore historic landmarks like Bascom Hall, the Carillon Tower, and Capitol views.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+              </svg>
+            </div>
+            <h3>Game Day Energy</h3>
+            <p>Feel the badger spirit at Camp Randall Stadium and state-of-the-art recreation centers.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Featured Content Section -->
+      <section id="featured" class="featured container">
+        <h2 class="section-title">Heart of Campus Life</h2>
+        <p class="section-lede">Located right in the heart of downtown Madison, UW-Madison bridges natural beauty and urban energy. From studying on Bascom Hill to paddling across Lake Mendota, campus life offers an unforgettable mix of academic excellence and awesome traditions.</p>
+        <div class="media">
+          <img src="images/featured_content.jpg" alt="Vibrant iconic sunburst chairs along Memorial Union Terrace" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+      </section>
+
+      <!-- =========================================================
+      STEP 5: Two secondary content blocks + CTA section 
+      ========================================================= -->
+      <section id="secondary-content" class="secondary container">
+        <h2 class="section-title">Explore Further</h2>
+
+        <div class="secondary-grid">
+          <article class="card">
+            <div class="card-text">
+              <h3>Visiting Campus</h3>
+              <p>Tour opportunities run year-round, starting from the Welcome Center near Union South. Book a guided walk or explore at your own pace.</p>
+              <a href="https://visit.wisc.edu" target="_blank" class="btn btn-dark">Learn More</a>
+            </div>
+            <div class="card-image img-a"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-text">
+              <h3>Campus Traditions</h3>
+              <p>Don't miss out on enjoying authentic Babcock Dairy ice cream or joining the legendary "Jump Around" tradition during football games!</p>
+              <a href="https://www.wisc.edu" target="_blank" class="btn btn-outline">Read Story</a>
+            </div>
+            <div class="card-image img-b"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cta" class="cta">
+        <div class="cta-inner container">
+          <h2>Heard enough?</h2>
+          <p>Plan your visit to Madison today and experience campus life firsthand.</p>
+          <a href="https://visit.wisc.edu" target="_blank" class="btn btn-dark">Visit UW-Madison</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+    STEP 6: Footer 
+    ========================================================= -->
+    <footer id="contact" class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-left">
+          <p>&copy; 2026 UW–Madison Explorer Guide. All rights reserved.</p>
+        </div>
+
+        <nav class="footer-cols">
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="https://map.wisc.edu" target="_blank">Campus Map</a>
+            <a href="https://visit.wisc.edu" target="_blank">Visit UW</a>
+            <a href="https://www.wisc.edu/contact-us/" target="_blank">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
